@@ -24,10 +24,10 @@ class ViewController: UIViewController {
             self.timer.invalidate()
         }
     }
-//    override func viewDidDisappear(_ animated: Bool) {
-//        super.viewDidDisappear(animated)
-//        timer.invalidate()
-//    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        timer.invalidate()
+    }
     
     @objc func changeBackground()
     {
