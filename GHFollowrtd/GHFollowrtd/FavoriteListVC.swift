@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FavoriteListVC.swift
 //  GHFollowrtd
 //
 //  Created by Gabriel Espinosa  on 2/2/20.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FavoriteListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBlue
     }
+    
+
 
 
 }
-

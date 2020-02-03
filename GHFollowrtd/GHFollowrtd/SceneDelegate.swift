@@ -12,16 +12,40 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScreen = (scene as? UIWindowScene) else { return }
         
+        let searchNC = UINavigationController(rootViewController: SearchVC())
+        let favoriteNC = UINavigationController(rootViewController: FavoriteListVC())
+        
+        let tabbar = UITabBarController()
+        tabbar.viewControllers = [searchNC,favoriteNC]
+        
+        window = UIWindow(frame: windowScreen.coordinateSpace.bounds)
         window?.windowScene = windowScreen
-        window?.rootViewController = UITabBarController()
+        window?.rootViewController = tabbar
         window?.makeKeyAndVisible()
+    }
+    
+    func createSearchNavigationController() -> UINavigationController
+    {
+        let searchVC = SearchVC()
+        searchVC.title = "Search"
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        return UINavigationController(rootViewController: searchVC)
+    }
+    
+    func createFavoritesNavigationController() -> UINavigationController
+    {
+        let favoriteVC = FavoriteListVC()
+        favoriteVC.title = "Favorites"
+        favoriteVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        
+        return UINavigationController(rootViewController: favoriteVC)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
