@@ -19,8 +19,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScreen = (scene as? UIWindowScene) else { return }
         
-        let searchNC = UINavigationController(rootViewController: SearchVC())
-        let favoriteNC = UINavigationController(rootViewController: FavoriteListVC())
         
         
         window = UIWindow(frame: windowScreen.coordinateSpace.bounds)
