@@ -53,6 +53,7 @@ class SearchVC: UIViewController {
     func configureTextField()
     {
         view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
             usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
@@ -73,4 +74,12 @@ class SearchVC: UIViewController {
         ])
     }
 
+}
+
+extension SearchVC : UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("Did tap return")
+        return true
+    }
 }
