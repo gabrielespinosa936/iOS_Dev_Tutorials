@@ -55,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				718DD70F23E7AF0300382155 /* GHFollowrtd */,
+				718DD71E23E7AF0600382155 /* Info.plist */,
 				718DD70E23E7AF0300382155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,7 +116,6 @@
 				718DD71223E7AF0300382155 /* SceneDelegate.swift */,
 				718DD71923E7AF0600382155 /* Assets.xcassets */,
 				718DD71B23E7AF0600382155 /* LaunchScreen.storyboard */,
-				718DD71E23E7AF0600382155 /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
