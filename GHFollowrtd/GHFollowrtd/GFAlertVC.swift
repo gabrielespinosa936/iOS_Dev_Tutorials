@@ -68,9 +68,9 @@ class GFAlertVC: UIViewController {
         titleLable.text = alertTitle ?? "Something went wrong"
         
         NSLayoutConstraint.activate([
-            titleLable.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
-            titleLable.leadingAnchor.constraint(equalToSystemSpacingAfter: containerView.leadingAnchor, multiplier: padding),
-            titleLable.trailingAnchor.constraint(equalToSystemSpacingAfter: containerView.trailingAnchor, multiplier: -padding),
+            titleLable.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 20),
+            titleLable.leadingAnchor.constraint(equalToSystemSpacingAfter: containerView.leadingAnchor, multiplier: 20),
+            titleLable.trailingAnchor.constraint(equalToSystemSpacingAfter: containerView.trailingAnchor, multiplier: -20),
             titleLable.heightAnchor.constraint(equalToConstant: 28)
         ])
     }
