@@ -70,22 +70,54 @@
 		718DD70F23E7AF0300382155 /* GHFollowrtd */ = {
 			isa = PBXGroup;
 			children = (
+				718DD73523EC982B00382155 /* Support */,
+				718DD73423EC97CB00382155 /* Extensions */,
+				718DD73323EC979800382155 /* CustomViews */,
+				718DD73223EC975000382155 /* Screens */,
+			);
+			path = GHFollowrtd;
+			sourceTree = "<group>";
+		};
+		718DD73223EC975000382155 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				718DD72423E7B51700382155 /* SearchVC.swift */,
+				718DD72623E7B57800382155 /* FavoriteListVC.swift */,
+				718DD72823EB23DC00382155 /* FollowerListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		718DD73323EC979800382155 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				7120D65C23E7F297003E07FD /* GFButton.swift */,
+				718DD72A23EB592300382155 /* GFTitleLable.swift */,
+				718DD72C23EB768500382155 /* GFBodyLabel.swift */,
+				718DD72E23EB775200382155 /* GFAlertVC.swift */,
+				7120D65E23E7F624003E07FD /* GFTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		718DD73423EC97CB00382155 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				718DD73023EBE55200382155 /* UIViewController+ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		718DD73523EC982B00382155 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				718DD71023E7AF0300382155 /* AppDelegate.swift */,
 				718DD71223E7AF0300382155 /* SceneDelegate.swift */,
 				718DD71923E7AF0600382155 /* Assets.xcassets */,
 				718DD71B23E7AF0600382155 /* LaunchScreen.storyboard */,
 				718DD71E23E7AF0600382155 /* Info.plist */,
-				718DD72423E7B51700382155 /* SearchVC.swift */,
-				718DD72623E7B57800382155 /* FavoriteListVC.swift */,
-				7120D65C23E7F297003E07FD /* GFButton.swift */,
-				7120D65E23E7F624003E07FD /* GFTextField.swift */,
-				718DD72823EB23DC00382155 /* FollowerListVC.swift */,
-				718DD72A23EB592300382155 /* GFTitleLable.swift */,
-				718DD72C23EB768500382155 /* GFBodyLabel.swift */,
-				718DD72E23EB775200382155 /* GFAlertVC.swift */,
-				718DD73023EBE55200382155 /* UIViewController+ext.swift */,
 			);
-			path = GHFollowrtd;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
