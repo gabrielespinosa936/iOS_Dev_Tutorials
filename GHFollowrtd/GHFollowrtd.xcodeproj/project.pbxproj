@@ -20,6 +20,7 @@
 		718DD72D23EB768500382155 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD72C23EB768500382155 /* GFBodyLabel.swift */; };
 		718DD72F23EB775200382155 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD72E23EB775200382155 /* GFAlertVC.swift */; };
 		718DD73123EBE55200382155 /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73023EBE55200382155 /* UIViewController+ext.swift */; };
+		718DD73723EC99E000382155 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 718DD73623EC99E000382155 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		718DD72C23EB768500382155 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		718DD72E23EB775200382155 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		718DD73023EBE55200382155 /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
+		718DD73623EC99E000382155 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,10 @@
 		718DD70423E7AF0300382155 = {
 			isa = PBXGroup;
 			children = (
+				718DD73623EC99E000382155 /* Default-568h@2x.png */,
 				718DD70F23E7AF0300382155 /* GHFollowrtd */,
-				718DD71E23E7AF0600382155 /* Info.plist */,
+				718DD71923E7AF0600382155 /* Assets.xcassets */,
+				718DD71B23E7AF0600382155 /* LaunchScreen.storyboard */,
 				718DD70E23E7AF0300382155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +78,7 @@
 				718DD73523EC982B00382155 /* Support */,
 				718DD73423EC97CB00382155 /* Extensions */,
 				718DD73323EC979800382155 /* CustomViews */,
+				718DD71E23E7AF0600382155 /* Info.plist */,
 				718DD73223EC975000382155 /* Screens */,
 			);
 			path = GHFollowrtd;
@@ -114,8 +119,6 @@
 			children = (
 				718DD71023E7AF0300382155 /* AppDelegate.swift */,
 				718DD71223E7AF0300382155 /* SceneDelegate.swift */,
-				718DD71923E7AF0600382155 /* Assets.xcassets */,
-				718DD71B23E7AF0600382155 /* LaunchScreen.storyboard */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				718DD71D23E7AF0600382155 /* LaunchScreen.storyboard in Resources */,
 				718DD71A23E7AF0600382155 /* Assets.xcassets in Resources */,
+				718DD73723EC99E000382155 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
