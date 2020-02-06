@@ -13,11 +13,12 @@ class GFAlertVC: UIViewController {
     let containerView = UIView()
     let titleLable = GFTitleLable(textAlighnment: .center, fontSize: 20)
     let messageLable = GFBodyLabel(textAlighnment: .center)
-    let actionButton = GFButton(backgroundColor: .systemPink, title: "Okay")
+    let actionButton = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     var buttonTitle : String?
     var message : String?
     var alertTitle : String?
+    
     var padding : CGFloat = 20
     
     override func viewDidLoad() {
@@ -28,6 +29,7 @@ class GFAlertVC: UIViewController {
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
         configureContainer()
         configureTitleLabel()
+        configureActionButton()
         configureMessageLabel()
     }
     
@@ -68,9 +70,9 @@ class GFAlertVC: UIViewController {
         titleLable.text = alertTitle ?? "Something went wrong"
         
         NSLayoutConstraint.activate([
-            titleLable.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 20),
-            titleLable.leadingAnchor.constraint(equalToSystemSpacingAfter: containerView.leadingAnchor, multiplier: 20),
-            titleLable.trailingAnchor.constraint(equalToSystemSpacingAfter: containerView.trailingAnchor, multiplier: -20),
+            titleLable.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
+            titleLable.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            titleLable.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
             titleLable.heightAnchor.constraint(equalToConstant: 28)
         ])
     }
@@ -103,7 +105,7 @@ class GFAlertVC: UIViewController {
         
         NSLayoutConstraint.activate([
             messageLable.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 8),
-            messageLable.leadingAnchor.constraint(equalToSystemSpacingAfter: containerView.leadingAnchor, multiplier: padding),
+            messageLable.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
             messageLable.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
             messageLable.bottomAnchor.constraint(equalTo: actionButton.bottomAnchor, constant: -12)
         ])
