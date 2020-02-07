@@ -24,6 +24,7 @@
 		718DD73A23ECDC9500382155 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73923ECDC9500382155 /* Follower.swift */; };
 		718DD73C23ECDDB200382155 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73B23ECDDB200382155 /* User.swift */; };
 		718DD73F23ED2A5600382155 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73E23ED2A5600382155 /* NetworkManager.swift */; };
+		718DD74623EE045200382155 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD74523EE045200382155 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		718DD73923ECDC9500382155 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		718DD73B23ECDDB200382155 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		718DD73E23ED2A5600382155 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		718DD74523EE045200382155 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		718DD70F23E7AF0300382155 /* GHFollowrtd */ = {
 			isa = PBXGroup;
 			children = (
+				718DD74423EE043F00382155 /* Utilities */,
 				718DD73D23ECE63100382155 /* Managers */,
 				718DD73823ECDC6000382155 /* Model */,
 				718DD71E23E7AF0600382155 /* Info.plist */,
@@ -146,6 +149,14 @@
 				718DD73E23ED2A5600382155 /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		718DD74423EE043F00382155 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				718DD74523EE045200382155 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +237,7 @@
 				7120D65D23E7F297003E07FD /* GFButton.swift in Sources */,
 				718DD72723E7B57800382155 /* FavoriteListVC.swift in Sources */,
 				718DD72F23EB775200382155 /* GFAlertVC.swift in Sources */,
+				718DD74623EE045200382155 /* ErrorMessage.swift in Sources */,
 				718DD72D23EB768500382155 /* GFBodyLabel.swift in Sources */,
 				718DD73A23ECDC9500382155 /* Follower.swift in Sources */,
 				718DD72B23EB592300382155 /* GFTitleLable.swift in Sources */,
