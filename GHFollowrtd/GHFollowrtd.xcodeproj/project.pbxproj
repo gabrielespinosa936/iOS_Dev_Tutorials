@@ -21,6 +21,9 @@
 		718DD72F23EB775200382155 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD72E23EB775200382155 /* GFAlertVC.swift */; };
 		718DD73123EBE55200382155 /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73023EBE55200382155 /* UIViewController+ext.swift */; };
 		718DD73723EC99E000382155 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 718DD73623EC99E000382155 /* Default-568h@2x.png */; };
+		718DD73A23ECDC9500382155 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73923ECDC9500382155 /* Follower.swift */; };
+		718DD73C23ECDDB200382155 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73B23ECDDB200382155 /* User.swift */; };
+		718DD73F23ED2A5600382155 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD73E23ED2A5600382155 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		718DD72E23EB775200382155 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		718DD73023EBE55200382155 /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
 		718DD73623EC99E000382155 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		718DD73923ECDC9500382155 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		718DD73B23ECDDB200382155 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		718DD73E23ED2A5600382155 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +81,12 @@
 		718DD70F23E7AF0300382155 /* GHFollowrtd */ = {
 			isa = PBXGroup;
 			children = (
+				718DD73D23ECE63100382155 /* Managers */,
+				718DD73823ECDC6000382155 /* Model */,
+				718DD71E23E7AF0600382155 /* Info.plist */,
 				718DD73523EC982B00382155 /* Support */,
 				718DD73423EC97CB00382155 /* Extensions */,
 				718DD73323EC979800382155 /* CustomViews */,
-				718DD71E23E7AF0600382155 /* Info.plist */,
 				718DD73223EC975000382155 /* Screens */,
 			);
 			path = GHFollowrtd;
@@ -121,6 +129,23 @@
 				718DD71223E7AF0300382155 /* SceneDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		718DD73823ECDC6000382155 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				718DD73923ECDC9500382155 /* Follower.swift */,
+				718DD73B23ECDDB200382155 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		718DD73D23ECE63100382155 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				718DD73E23ED2A5600382155 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718DD73C23ECDDB200382155 /* User.swift in Sources */,
 				7120D65F23E7F624003E07FD /* GFTextField.swift in Sources */,
 				718DD73123EBE55200382155 /* UIViewController+ext.swift in Sources */,
 				718DD72523E7B51700382155 /* SearchVC.swift in Sources */,
@@ -201,7 +227,9 @@
 				718DD72723E7B57800382155 /* FavoriteListVC.swift in Sources */,
 				718DD72F23EB775200382155 /* GFAlertVC.swift in Sources */,
 				718DD72D23EB768500382155 /* GFBodyLabel.swift in Sources */,
+				718DD73A23ECDC9500382155 /* Follower.swift in Sources */,
 				718DD72B23EB592300382155 /* GFTitleLable.swift in Sources */,
+				718DD73F23ED2A5600382155 /* NetworkManager.swift in Sources */,
 				718DD72923EB23DC00382155 /* FollowerListVC.swift in Sources */,
 				718DD71123E7AF0300382155 /* AppDelegate.swift in Sources */,
 				718DD71323E7AF0300382155 /* SceneDelegate.swift in Sources */,
