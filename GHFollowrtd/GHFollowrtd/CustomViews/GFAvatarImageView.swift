@@ -28,4 +28,11 @@ class GFAvatarImageView: UIImageView {
         image = placeholderImage
         translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    func downloadImage(from urlString : String )
+    {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+    }
 }
