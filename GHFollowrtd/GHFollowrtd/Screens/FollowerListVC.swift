@@ -16,6 +16,8 @@ class FollowerListVC: UIViewController {
         case main
     }
     
+    var followers : [Follower] = []
+    
     var userName : String!
     var collectionView : UICollectionView!
     var dataSource : UICollectionViewDiffableDataSource<Section, Follower>!
@@ -57,14 +59,14 @@ class FollowerListVC: UIViewController {
         flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
         flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 40)
         
-        return UICollectionViewFlowLayout()
+        return flowLayout
     }
     
     func configureCollectionView()
     {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
         view.addSubview(collectionView)
-        collectionView.backgroundColor = .systemPink
+        collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     func getFollowers()
@@ -74,7 +76,8 @@ class FollowerListVC: UIViewController {
             switch result
             {
                 case .success(let followers):
-                    print(followers)
+                    self.followers = followers
+                    self.updateData()
                 
                 case .failure(let error):
                     self.presentGFAlertOnMainThread(title: "Not good", message: error.rawValue, buttonTitle: "Ok")
@@ -93,10 +96,12 @@ class FollowerListVC: UIViewController {
         })
     }
     
-//    func updateData()
-//    {
-//        let snapShot = NSDiffableDataSourceSnapshot<Section,Follower>()
-//        snapShot.appendSections(<#T##identifiers: [FollowerListVC.Section]##[FollowerListVC.Section]#>)
-//    }
+    func updateData()
+    {
+        var snapShot = NSDiffableDataSourceSnapshot<Section,Follower>()
+        snapShot.appendSections([.main])
+        snapShot.appendItems(followers)
+        DispatchQueue.main.async { self.dataSource.apply(snapShot, animatingDifferences: true) }
+    }
 
 }
