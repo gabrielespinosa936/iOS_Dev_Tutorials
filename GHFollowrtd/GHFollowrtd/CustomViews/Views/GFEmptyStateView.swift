@@ -10,11 +10,19 @@ import UIKit
 
 
 class GFEmptyStateView: UIView {
-    let messageLable = GFTitleLable(textAlighnment: .center, fontSize: 28)
+    let messageLabel = GFTitleLable(textAlighnment: .center, fontSize: 28)
     let logoImageView = UIImageView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
+    }
+    
+    init(message : String)
+    {
+        super.init(frame: .zero)
+        messageLabel.text = message
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -23,20 +31,28 @@ class GFEmptyStateView: UIView {
     
     private func configure()
     {
-        addSubview(messageLable)
+        addSubview(messageLabel)
         addSubview(logoImageView)
         
-        messageLable.numberOfLines = 3
-        messageLable.textColor = .secondaryLabel
+        messageLabel.numberOfLines = 3
+        messageLabel.textColor = .secondaryLabel
         
         logoImageView.image = UIImage(named: "empty-state-logo")
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            messageLable.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -150),
-            messageLable.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-            messageLable.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-            messageLable.heightAnchor.constraint(equalToConstant: 200)
+            messageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -150),
+            messageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
+            messageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
+            messageLabel.heightAnchor.constraint(equalToConstant: 200),
+            
+            logoImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
+            logoImageView.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
+            // Usually is a negative constant, but since I am displaying half the image I need to
+            // make the constant positive.
+            logoImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 170),
+            logoImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 40)
+           
             
         ])
     }
