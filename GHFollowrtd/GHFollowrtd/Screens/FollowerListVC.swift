@@ -10,8 +10,15 @@ import UIKit
 
 class FollowerListVC: UIViewController {
     
+    // Enums are hashable by default
+    enum Section
+    {
+        case main
+    }
+    
     var userName : String!
     var collectionView : UICollectionView!
+    var dataSource : UICollectionViewDiffableDataSource<Section, Follower>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +30,7 @@ class FollowerListVC: UIViewController {
         configureViewController()
         configureCollectionView()
         getFollowers()
+        configureDataSource()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -75,5 +83,20 @@ class FollowerListVC: UIViewController {
             
         }
     }
+    
+    func configureDataSource()
+    {
+        dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
+            cell.set(follower: follower)
+            return cell
+        })
+    }
+    
+//    func updateData()
+//    {
+//        let snapShot = NSDiffableDataSourceSnapshot<Section,Follower>()
+//        snapShot.appendSections(<#T##identifiers: [FollowerListVC.Section]##[FollowerListVC.Section]#>)
+//    }
 
 }
