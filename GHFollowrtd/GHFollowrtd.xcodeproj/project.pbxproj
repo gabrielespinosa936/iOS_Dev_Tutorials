@@ -27,6 +27,7 @@
 		718DD74623EE045200382155 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD74523EE045200382155 /* ErrorMessage.swift */; };
 		718DD74A23EE228800382155 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD74923EE228800382155 /* FollowerCell.swift */; };
 		718DD74C23EE236100382155 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD74B23EE236100382155 /* GFAvatarImageView.swift */; };
+		718DD74E23EE8AD600382155 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD74D23EE8AD600382155 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		718DD74523EE045200382155 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		718DD74923EE228800382155 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		718DD74B23EE236100382155 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		718DD74D23EE8AD600382155 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				718DD74523EE045200382155 /* ErrorMessage.swift */,
+				718DD74D23EE8AD600382155 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				718DD73123EBE55200382155 /* UIViewController+ext.swift in Sources */,
 				718DD72523E7B51700382155 /* SearchVC.swift in Sources */,
 				7120D65D23E7F297003E07FD /* GFButton.swift in Sources */,
+				718DD74E23EE8AD600382155 /* UIHelper.swift in Sources */,
 				718DD74C23EE236100382155 /* GFAvatarImageView.swift in Sources */,
 				718DD72723E7B57800382155 /* FavoriteListVC.swift in Sources */,
 				718DD72F23EB775200382155 /* GFAlertVC.swift in Sources */,
