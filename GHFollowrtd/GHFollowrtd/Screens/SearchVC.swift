@@ -99,7 +99,6 @@ extension SearchVC : UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         pushFollowerListVC()
-        print("Did tap return")
         return true
     }
 }

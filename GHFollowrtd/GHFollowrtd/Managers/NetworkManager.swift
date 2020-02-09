@@ -61,4 +61,48 @@ class NetworkManager
         task.resume() // Starting network call
         
     }
+    
+    func getUserInfo(for username : String, completed: @escaping (Result<User,GFError>) -> Void)
+    {
+        let endPoint = baseURL + "\(username)"
+        
+        guard let url = URL(string: endPoint) else {
+            completed(.failure(.invalidUsername))
+            return
+        }
+        //                                                      data,response,error are all optionals
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            if let _ = error
+            {
+                completed(.failure(.badInternetConnection))
+                return
+            }
+            // setting a new variable equal to response.  If the response has an OK (200) status code
+            // then set that value to the new variable reponse, otherwise handle the error
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                completed(.failure(.noResponseFromServer))
+                return
+            }
+            
+            guard let data = data else
+            {
+                completed(.failure(.invalidDataFromServer))
+                return
+                
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let user = try decoder.decode(User.self, from: data)
+                //completed(followers, nil)
+                completed(.success(user))
+            }catch {
+                completed(.failure(.invalidDataFromServer))
+            }
+        }
+        task.resume() // Starting network call
+        
+    }
 }
