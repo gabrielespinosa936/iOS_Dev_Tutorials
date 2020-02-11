@@ -11,7 +11,8 @@ import UIKit
 class UserInfoVC: UIViewController {
     
     let headerView = UIView()
-    
+    let itemviewOne = UIView()
+    let itemViewTwo = UIView()
     
     var username : String!
 
@@ -40,13 +41,34 @@ class UserInfoVC: UIViewController {
     
     func layoutUI()
     {
+        let padding : CGFloat = 20
+        let itemHeight : CGFloat = 140
         view.addSubview(headerView)
+        view.addSubview(itemviewOne)
+        view.addSubview(itemViewTwo)
+        itemviewOne.backgroundColor = .systemPink
+        itemViewTwo.backgroundColor = .systemBlue
         headerView.translatesAutoresizingMaskIntoConstraints = false
+        itemviewOne.translatesAutoresizingMaskIntoConstraints = false
+        itemViewTwo.translatesAutoresizingMaskIntoConstraints = false
+        
+        
         NSLayoutConstraint.activate([
+            
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 180)
+            headerView.heightAnchor.constraint(equalToConstant: 180),
+            
+            itemviewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
+            itemviewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemviewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemviewOne.heightAnchor.constraint(equalToConstant: itemHeight),
+            
+            itemViewTwo.topAnchor.constraint(equalTo: itemviewOne.bottomAnchor, constant: padding),
+            itemViewTwo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemViewTwo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight)
         ])
     }
     
