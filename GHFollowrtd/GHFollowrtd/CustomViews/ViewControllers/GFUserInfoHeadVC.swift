@@ -33,6 +33,21 @@ class GFUserInfoHeadVC: UIViewController {
         super.viewDidLoad()
         addSubviews()
         layoutUI()
+        configureUIElements()
+    }
+    
+    func configureUIElements()
+    {
+        avatarImageView.downloadImage(from: user.avatarUrl)
+        usernameLabel.text = user.login
+        nameLabel.text = user.name ?? ""
+        locationLabel.text = user.location ?? "No location"
+        bioLabel.text = user.bio ?? "No bio available"
+        bioLabel.numberOfLines = 3
+        
+        locationImageView.image = UIImage.init(systemName: SFSymbols.location)
+        locationImageView.tintColor = .secondaryLabel
+        
     }
     
     func addSubviews()
@@ -78,7 +93,12 @@ class GFUserInfoHeadVC: UIViewController {
             locationLabel.centerYAnchor.constraint(equalTo: locationImageView.centerYAnchor, constant: 0),
             locationLabel.leadingAnchor.constraint(equalTo: locationLabel.trailingAnchor, constant: 5),
             locationLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            locationLabel.heightAnchor.constraint(equalToConstant: 20)
+            locationLabel.heightAnchor.constraint(equalToConstant: 20),
+            
+            bioLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: textImagePadding),
+            bioLabel.leadingAnchor.constraint(equalTo: avatarImageView.leadingAnchor),
+            bioLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            bioLabel.heightAnchor.constraint(equalToConstant: 60)
             
         ])
     }
