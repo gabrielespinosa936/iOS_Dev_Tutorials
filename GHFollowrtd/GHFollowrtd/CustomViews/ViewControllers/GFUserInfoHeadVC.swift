@@ -75,7 +75,7 @@ class GFUserInfoHeadVC: UIViewController {
             avatarImageView.heightAnchor.constraint(equalToConstant: avatarImageViewPadding),
             
             // Aligning the username label to the top of avatar image view.
-            usernameLabel.topAnchor.constraint(equalTo: view.topAnchor),
+            usernameLabel.topAnchor.constraint(equalTo: avatarImageView.topAnchor),
             usernameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: textImagePadding),
             usernameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
             usernameLabel.heightAnchor.constraint(equalToConstant: heighAnchorPadding),
