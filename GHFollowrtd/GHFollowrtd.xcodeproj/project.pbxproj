@@ -33,6 +33,7 @@
 		718DD75A23F10C2200382155 /* GFUserInfoHeadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD75923F10C2200382155 /* GFUserInfoHeadVC.swift */; };
 		718DD75C23F11D5B00382155 /* GFSecondayTitileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD75B23F11D5B00382155 /* GFSecondayTitileLabel.swift */; };
 		718DD75E23F265CB00382155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD75D23F265CB00382155 /* Constants.swift */; };
+		71B59FBE23F3E1FF00C7B814 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B59FBD23F3E1FF00C7B814 /* GFItemInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		718DD75923F10C2200382155 /* GFUserInfoHeadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeadVC.swift; sourceTree = "<group>"; };
 		718DD75B23F11D5B00382155 /* GFSecondayTitileLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondayTitileLabel.swift; sourceTree = "<group>"; };
 		718DD75D23F265CB00382155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71B59FBD23F3E1FF00C7B814 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				718DD75523EF364300382155 /* GFEmptyStateView.swift */,
+				71B59FBD23F3E1FF00C7B814 /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				718DD74C23EE236100382155 /* GFAvatarImageView.swift in Sources */,
 				718DD72723E7B57800382155 /* FavoriteListVC.swift in Sources */,
 				718DD72F23EB775200382155 /* GFAlertVC.swift in Sources */,
+				71B59FBE23F3E1FF00C7B814 /* GFItemInfoView.swift in Sources */,
 				718DD74A23EE228800382155 /* FollowerCell.swift in Sources */,
 				718DD75A23F10C2200382155 /* GFUserInfoHeadVC.swift in Sources */,
 				718DD74623EE045200382155 /* ErrorMessage.swift in Sources */,
