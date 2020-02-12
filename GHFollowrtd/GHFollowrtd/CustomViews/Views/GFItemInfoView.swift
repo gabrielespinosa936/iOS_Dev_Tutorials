@@ -60,10 +60,16 @@ class GFItemInfoView: UIView {
             titleLable.text = "Public Repos"
             break
         case .gists:
+            symbolImageView.image = UIImage(systemName: SFSymbols.gists)
+            titleLable.text = "Public Gists"
             break
         case .followers:
+            symbolImageView.image = UIImage(systemName: SFSymbols.followers)
+            titleLable.text = "Public Followers"
             break
         case .following:
+            symbolImageView.image = UIImage(systemName: SFSymbols.following)
+            titleLable.text = "Public Following"
             break
         }
     }
