@@ -34,6 +34,7 @@
 		718DD75C23F11D5B00382155 /* GFSecondayTitileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD75B23F11D5B00382155 /* GFSecondayTitileLabel.swift */; };
 		718DD75E23F265CB00382155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD75D23F265CB00382155 /* Constants.swift */; };
 		71B59FBE23F3E1FF00C7B814 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B59FBD23F3E1FF00C7B814 /* GFItemInfoView.swift */; };
+		71B59FC023F45E8A00C7B814 /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B59FBF23F45E8A00C7B814 /* GFItemInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		718DD75B23F11D5B00382155 /* GFSecondayTitileLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondayTitileLabel.swift; sourceTree = "<group>"; };
 		718DD75D23F265CB00382155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71B59FBD23F3E1FF00C7B814 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
+		71B59FBF23F45E8A00C7B814 /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			children = (
 				718DD72E23EB775200382155 /* GFAlertVC.swift */,
 				718DD75923F10C2200382155 /* GFUserInfoHeadVC.swift */,
+				71B59FBF23F45E8A00C7B814 /* GFItemInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				718DD72523E7B51700382155 /* SearchVC.swift in Sources */,
 				7120D65D23E7F297003E07FD /* GFButton.swift in Sources */,
 				718DD74E23EE8AD600382155 /* UIHelper.swift in Sources */,
+				71B59FC023F45E8A00C7B814 /* GFItemInfoVC.swift in Sources */,
 				718DD75E23F265CB00382155 /* Constants.swift in Sources */,
 				718DD74C23EE236100382155 /* GFAvatarImageView.swift in Sources */,
 				718DD72723E7B57800382155 /* FavoriteListVC.swift in Sources */,

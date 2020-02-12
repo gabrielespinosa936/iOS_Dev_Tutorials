@@ -52,7 +52,7 @@ class GFItemInfoView: UIView {
         ])
     }
     
-    func set(itemInfoType : ItemInfoType)
+    func set(itemInfoType : ItemInfoType, withCount count : Int)
     {
         switch itemInfoType {
         case .repos:
@@ -72,5 +72,6 @@ class GFItemInfoView: UIView {
             titleLable.text = "Public Following"
             break
         }
+        countLabel.text = String(count)
     }
 }
