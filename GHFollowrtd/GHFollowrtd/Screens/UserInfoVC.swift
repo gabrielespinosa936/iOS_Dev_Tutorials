@@ -30,6 +30,8 @@ class UserInfoVC: UIViewController {
                 print(user)
                 DispatchQueue.main.async {
                     self.add(childVC: GFUserInfoHeadVC(user: user), to: self.headerView)
+                    self.add(childVC: GFRepoItemVC(user: user), to: self.itemviewOne)
+                    self.add(childVC: GFFollowerItemVC(user: user), to: self.itemViewTwo)
                 }
                 
             case .failure(let error):
@@ -46,8 +48,6 @@ class UserInfoVC: UIViewController {
         view.addSubview(headerView)
         view.addSubview(itemviewOne)
         view.addSubview(itemViewTwo)
-        itemviewOne.backgroundColor = .systemPink
-        itemViewTwo.backgroundColor = .systemBlue
         headerView.translatesAutoresizingMaskIntoConstraints = false
         itemviewOne.translatesAutoresizingMaskIntoConstraints = false
         itemViewTwo.translatesAutoresizingMaskIntoConstraints = false
