@@ -57,8 +57,8 @@ class UserInfoVC: UIViewController {
         let itemHeight: CGFloat = 140
         
         itemViews = [headerView, itemViewOne, itemViewTwo]
-        
-        for itemView in itemViews {
+        for itemView in itemViews
+        {
             view.addSubview(itemView)
             itemView.translatesAutoresizingMaskIntoConstraints = false
             
@@ -68,15 +68,26 @@ class UserInfoVC: UIViewController {
             ])
         }
         
+        view.addSubview(headerView)
+        view.addSubview(itemViewOne)
+        view.addSubview(itemViewTwo)
+        
+        itemViewOne.backgroundColor = .systemPink
+        itemViewTwo.backgroundColor = .systemGreen
+        
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        itemViewOne.translatesAutoresizingMaskIntoConstraints = false
+        itemViewTwo.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 180),
             
             itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
-            itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
+            itemViewOne.heightAnchor.constraint(equalToConstant: 140),
             
             itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
             itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight)
+            
         ])
     }
     
