@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7120D65D23E7F297003E07FD /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120D65C23E7F297003E07FD /* GFButton.swift */; };
 		7120D65F23E7F624003E07FD /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120D65E23E7F624003E07FD /* GFTextField.swift */; };
+		712FCEFF23F7489900A51977 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712FCEFE23F7489900A51977 /* String+ext.swift */; };
+		712FCF0323F748D700A51977 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712FCF0223F748D700A51977 /* Date+ext.swift */; };
 		718DD71123E7AF0300382155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD71023E7AF0300382155 /* AppDelegate.swift */; };
 		718DD71323E7AF0300382155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DD71223E7AF0300382155 /* SceneDelegate.swift */; };
 		718DD71A23E7AF0600382155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718DD71923E7AF0600382155 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		7120D65C23E7F297003E07FD /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		7120D65E23E7F624003E07FD /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		712FCEFE23F7489900A51977 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
+		712FCF0223F748D700A51977 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
 		718DD70D23E7AF0300382155 /* GHFollowrtd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowrtd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718DD71023E7AF0300382155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718DD71223E7AF0300382155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				718DD73023EBE55200382155 /* UIViewController+ext.swift */,
+				712FCEFE23F7489900A51977 /* String+ext.swift */,
+				712FCF0223F748D700A51977 /* Date+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 				718DD74A23EE228800382155 /* FollowerCell.swift in Sources */,
 				71B59FC423F52F3100C7B814 /* GFFollowerInfoVC.swift in Sources */,
 				718DD75A23F10C2200382155 /* GFUserInfoHeadVC.swift in Sources */,
+				712FCEFF23F7489900A51977 /* String+ext.swift in Sources */,
 				718DD74623EE045200382155 /* ErrorMessage.swift in Sources */,
 				718DD72D23EB768500382155 /* GFBodyLabel.swift in Sources */,
 				718DD73A23ECDC9500382155 /* Follower.swift in Sources */,
@@ -363,6 +370,7 @@
 				718DD72923EB23DC00382155 /* FollowerListVC.swift in Sources */,
 				718DD71123E7AF0300382155 /* AppDelegate.swift in Sources */,
 				718DD71323E7AF0300382155 /* SceneDelegate.swift in Sources */,
+				712FCF0323F748D700A51977 /* Date+ext.swift in Sources */,
 				71B59FC223F52C2000C7B814 /* GFRepoItemVC.swift in Sources */,
 				718DD75823EFB97800382155 /* UserInfoVC.swift in Sources */,
 			);
