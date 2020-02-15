@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol FollowerListVCDelegate : class {
+    func didRequestFollowers(for username : String)
+}
+
 class FollowerListVC: UIViewController {
     
     // Enums are hashable by default
