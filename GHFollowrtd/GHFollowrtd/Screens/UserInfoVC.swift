@@ -9,7 +9,7 @@
 
 
 import UIKit
-
+import SafariServices
 protocol UserInfoVCDelegate: class {
     func didTapGitHubProfile(for user: User)
     func didTapGetFollowers(for user: User)
@@ -124,8 +124,8 @@ extension UserInfoVC: UserInfoVCDelegate {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid.", buttonTitle: "Ok")
             return
         }
-        
-        //presentSafariVC(with: url)
+
+        presentSafariVC(with: url)
     }
     
     func didTapGetFollowers(for user: User) {

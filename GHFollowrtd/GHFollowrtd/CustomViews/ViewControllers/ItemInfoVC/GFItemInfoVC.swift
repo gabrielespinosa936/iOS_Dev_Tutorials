@@ -42,6 +42,16 @@ class GFItemInfoVC: UIViewController {
         
     }
     
+    private func configureActionButton()
+    {
+        actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func actionButtonTapped()
+    {
+        
+    }
+    
     private func configureStackView()
     {
         stackView.axis = .horizontal
