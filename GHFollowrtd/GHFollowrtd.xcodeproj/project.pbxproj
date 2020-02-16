@@ -111,7 +111,6 @@
 		718DD70F23E7AF0300382155 /* GHFollowrtd */ = {
 			isa = PBXGroup;
 			children = (
-				718DD74723EE220A00382155 /* New Group */,
 				718DD74423EE043F00382155 /* Utilities */,
 				718DD73D23ECE63100382155 /* Managers */,
 				718DD73823ECDC6000382155 /* Model */,
@@ -193,13 +192,6 @@
 				718DD75D23F265CB00382155 /* Constants.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		718DD74723EE220A00382155 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		718DD74823EE223200382155 /* Cells */ = {
